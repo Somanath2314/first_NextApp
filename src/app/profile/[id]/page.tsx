@@ -1,4 +1,4 @@
-export default function signup({params} : any) {
+export default async function signup({params} : any) {
     return (
         <div>
             <h1>Profile page</h1>

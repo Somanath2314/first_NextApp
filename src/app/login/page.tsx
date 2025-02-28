@@ -21,6 +21,7 @@ export default function login() {
             const response = await axios.post("/api/users/login", user);
             console.log(response);
             toast.success("User Logged in successfully"); 
+            router.push("/profile");
         } catch (error) {
             console.log(error);
             toast.error("Some error while registering the user");
